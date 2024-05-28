@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario de Contacto</title>
-    <style>
-    </style>
+    <style></style>
   </head>
   <body>
-    <form id="formulario" action="#" method="POST">
+    <form id="formulario" action="https://formsubmit.co/andreigeorgemira@gmail.com" method="POST">
       <label for="email">Correo electrónico:</label>
       <input type="email" id="email" name="email" required />
       <br />
@@ -20,25 +19,5 @@
       <br />
       <button type="submit">Enviar</button>
     </form>
-
-    <div id="resultado"></div>
-
-    <script>
-      document
-        .getElementById("formulario")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          const email = document.getElementById("email").value;
-          const tel = document.getElementById("tel").value;
-          const mensaje = document.getElementById("mensaje").value;
-
-          const resultDiv = document.getElementById("resultado");
-          resultDiv.innerHTML = `<h2>Datos enviados:</h2>
-                               <p><strong>Correo electrónico:</strong> ${email}</p>
-                               <p><strong>Teléfono:</strong> ${tel}</p>
-                               <p><strong>Mensaje:</strong> ${mensaje}</p>`;
-        });
-    </script>
   </body>
 </html>
