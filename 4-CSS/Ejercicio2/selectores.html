@@ -2,55 +2,40 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio de Selección</title>
-    <link rel="stylesheet" href="selectores.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="selectores.css" />
   </head>
+
   <body>
-    <!-- Selección 2: Tipo P -->
-    <p>Este es un párrafo.</p>
-    <!-- Selección 3: ID title-1 -->
-    <h1 id="title-1">Título con ID</h1>
-    <!-- Selección 4: Clase .bg-yellow -->
-    <div class="bg-yellow">Div con fondo amarillo</div>
-    <!-- Selección 5: Atributo ID -->
-    <div id="elemento-con-id">Elemento con atributo ID</div>
-    <!-- Selección 6: Atributo ID con valor title-1 -->
-    <div id="title-1">Otro elemento con ID title-1</div>
-    <!-- Selección 7: Atributo HREF con valor https://www.yahoo.com -->
-    <a href="https://www.yahoo.com">Enlace a Yahoo</a>
-    <!-- Selección 8: Atributo class con valor que empiece por title -->
-    <div class="title-class">Div con clase que empieza por title</div>
-    <!-- Selección 9: Atributo HREF que acabe en .com -->
-    <a href="https://www.google.com">Enlace a Google</a>
-    <!-- Selección 10: Atributo class con valor title-1, title-2... -->
-    <div class="title-1">Div con clase title-1</div>
-    <div class="title-2">Div con clase title-2</div>
-    <!-- Selección 11: Atributo href que contenga 127 -->
-    <a href="https://www.example.com/page127">Enlace con 127 en href</a>
-    <!-- Selección 12: Atributo href que empiece por http -->
-    <a href="http://www.ejemplo.com">Enlace que empieza por http</a>
-    <!-- Selección 13: A, P, H1 desde una única regla CSS -->
-    <div class="selection-13">
-      <a href="#">Enlace dentro de .selection-13</a>
-      <p>Párrafo dentro de .selection-13</p>
-      <h1>H1 dentro de .selection-13</h1>
-    </div>
-    <!-- Selección 14: P dentro de main -->
     <main>
-      <p>Párrafo dentro de main</p>
-    </main>
-    <!-- Selección 15: Hermano de H1 -->
-    <h1>H1</h1>
-    <div>Hermano de H1</div>
-    <!-- Selección 16: Hermanos de H1 -->
-    <h1>Otro H1</h1>
-    <div>Hermano de Otro H1</div>
-    <p>Otro hermano de Otro H1</p>
-    <!-- Selección 17: Hijos directos de main -->
-    <main>
-      <div>Hijo directo de main</div>
-      <p>Otro hijo directo de main</p>
+      <h1 id="title-1">Titulo principal</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolor
+        quasi, iusto magni ducimus accusamus distinctio ea laudantium
+        necessitatibus ipsam, natus recusandae, assumenda cupiditate beatae
+        aspernatur inventore consequatur quaerat quisquam!
+      </p>
+      <h2 class="title-2">Subtitulo</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat dolor
+        quasi, iusto magni ducimus accusamus distinctio ea laudantium
+        necessitatibus ipsam, natus recusandae, assumenda cupiditate beatae
+        aspernatur inventore consequatur quaerat quisquam!
+      </p>
+      <h2 class="title-2">Listado</h2>
+      <ol>
+        <li class="bg-yellow">Lorem</li>
+        <li class="bg-yellow">Ipsum</li>
+        <li class="bg-yellow">sit</li>
+        <li class="bg-yellow">amet</li>
+      </ol>
+      <a href="https://www.yahoo.com">Ir a Yahoo</a>
+      <a href="https://www.google.es">Ir a Google</a>
+      <a href="https://www.facebook.es">Ir a Facebook</a>
+      <a href="https://www.amazon.com">Ir a Amazon</a>
+      <a href="http://127.0.0.1:5500/">Ir a localhost</a>
     </main>
   </body>
 </html>
