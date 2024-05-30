@@ -1,0 +1,88 @@
+/* Selección 1: Todos los elementos */
+* {
+    border: 1px solid black;
+  }
+
+  /* Selección 2: Tipo P */
+  p {
+    color: red;
+  }
+
+  /* Selección 3: ID title-1 */
+  #title-1 {
+    font-weight: bold;
+  }
+
+  /* Selección 4: Clase .bg-yellow */
+  .bg-yellow {
+    background-color: yellow;
+  }
+
+  /* Selección 5: Atributo ID */
+  [id] {
+    padding: 5px;
+  }
+
+  /* Selección 6: Atributo ID con valor title-1 */
+  [id="title-1"] {
+    color: blue;
+  }
+
+  /* Selección 7: Atributo HREF con valor https://www.yahoo.com */
+  [href="https://www.yahoo.com"]
+  {
+    text-decoration: underline;
+  }
+
+  /* Selección 8: Atributo class con valor que empiece por title */
+  [class^="title"] {
+    font-style: italic;
+  }
+
+  /* Selección 9: Atributo HREF que acabe en .com */
+  [href$=".com"] {
+    font-size: 1.2em;
+  }
+
+  /* Selección 10: Atributo class con valor title-1, title-2... */
+  [class~="title-1"],
+  [class~="title-2"] {
+    background-color: lightgray;
+  }
+
+  /* Selección 11: Atributo href que contenga 127 */
+  [href*="127"] {
+    color: green;
+  }
+
+  /* Selección 12: Atributo href que empiece por http */
+  [href^="http"] {
+    font-family: Arial, sans-serif;
+  }
+
+  /* Selección 13: Selección de A, P, H1 */
+  .selection-13 a,
+  .selection-13 p,
+  .selection-13 h1 {
+    color: blue;
+  }
+
+  /* Selección 14: P dentro de main */
+  main p {
+    background-color: lightblue;
+  }
+
+  /* Selección 15: Hermano de H1 */
+  h1 + * {
+    border: 2px solid red;
+  }
+
+  /* Selección 16: Hermanos de H1 */
+  h1 ~ * {
+    border: 2px dotted green;
+  }
+
+  /* Selección 17: Hijos directos de main */
+  main > * {
+    padding: 10px;
+  }
