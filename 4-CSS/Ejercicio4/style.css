@@ -1,28 +1,27 @@
-        /* Define un background color para el HTML */
-        body {
-            background-color: bisque;
-        }
+/* Define un background color para el HTML */
+body {
+  background-color: bisque;
+}
 
-        /* Define un titulo principal */
-        h1 {
-            width: fit-content;
-            color: red;
-        }
+/* Define un titulo principal */
+h1 {
+  color: red;
+}
 
-        /* Haz que se párrafo se visualice en 3 columnas */
-        p {
-            column-count: 3;
-            column-gap: 40px;
-            column-rule: 2px solid red; /* Define una regla que separe cada una de las columnas de 2px y que sea roja */
-        }
+/* Haz que se párrafo se visualice en 3 columnas */
+p {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 2px solid red; /* Define una regla que separe cada una de las columnas de 2px y que sea roja */
+}
 
-        /* Cuando nos situemos sobre el H1 queremos que el color del texto cambie */
-        h1:hover {
-            color: blue;
-        }
+/* Cuando nos situemos sobre el H1 queremos que el color del texto cambie */
+span:hover {
+  color: blue;
+}
 
-        /* Cuando seleccionemos el texto del párrafo, queremos que cambie el background y el color del texto */
-        p::selection {
-            background: black;
-            color: white;
-        }
+/* Cuando seleccionemos el texto del párrafo, queremos que cambie el background y el color del texto */
+p::selection {
+  background: black;
+  color: white;
+}
