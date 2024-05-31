@@ -5,6 +5,7 @@
 
         /* Define un titulo principal */
         h1 {
+            width: fit-content;
             color: red;
         }
 
