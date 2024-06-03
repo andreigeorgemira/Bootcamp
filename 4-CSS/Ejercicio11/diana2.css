@@ -43,6 +43,8 @@ body {
     width: 400px;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(20, 1fr);
+    animation: rotacion 2s linear infinite;
+    -webkit-animation: rotacion 2s linear infinite;
 }
 
 .white-outer {
@@ -127,3 +129,14 @@ div {
     top: 4px;
     width: 10px;
 }
+
+
+@keyframes rotacion {
+    0%{
+       transform: rotate(0deg);
+      }
+   100%{
+       transform: rotate(360deg);
+      }
+   }
+   
