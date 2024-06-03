@@ -1,0 +1,13 @@
+.overflow-hidden {
+  width: 300px;
+  height: 100px;
+  background-color: #d4ff00;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.overflow-scroll {
+  width: 300px;
+  height: 100px;
+  background-color: #d4ff00;
+  overflow-y: scroll;
+}

@@ -1,0 +1,13 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+    margin: 50px;
+    width: 200px;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.3));
+}

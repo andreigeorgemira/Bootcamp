@@ -1,0 +1,35 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  margin: auto;
+  background-color: cyan;
+  width: fit-content;
+}
+
+div {
+  width: 50%;
+  margin: auto;
+  border: 5px solid black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: bisque;
+}
+table {
+  width: 100%;
+  text-align: center;
+}
+thead,
+tfoot {
+  font-weight: bold;
+}
+
+tbody td {
+  border-left: 1px solid black;
+  border-bottom: 2px solid black;
+}
+
+tfoot {
+  background-color: cyan;
+}
