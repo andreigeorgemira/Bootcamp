@@ -1,0 +1,27 @@
+/* styles.css */
+
+/* Default background color */
+body {
+    background-color: white;
+}
+
+/* For screens less than 768px wide */
+@media (max-width: 767px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* For screens between 768px and 1023px wide */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/* For screens 1024px wide and above */
+@media (min-width: 1024px) {
+    body {
+        background-color: lightcoral;
+    }
+}
