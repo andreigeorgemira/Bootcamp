@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Array Exercise</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="array-exercise">
+                <div>
+                    <h2>Add Item</h2>
+                    <button onclick="pushItem()">push</button>
+                    <button onclick="unshiftItem()">unshift</button>
+                    <button onclick="insertAt()">insert at <input type="number" id="insert-index" value="0" min="0" /></button>
+                </div>
+                <div>
+                    <h2>Remove Item</h2>
+                    <button onclick="popItem()">pop</button>
+                    <button onclick="shiftItem()">shift</button>
+                    <button onclick="removeAt()">remove at <input type="number" id="remove-index" value="0" min="0" /></button>
+                </div>
+                <div>
+                    <h2>Array</h2>
+                    <pre id="array-display">[]</pre>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
