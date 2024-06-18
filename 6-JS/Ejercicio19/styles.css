@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1e7dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "eat play"
+        "tamagotchi tamagotchi"
+        "fight sleep";
+    gap: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.section {
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#eat-section {
+    grid-area: eat;
+    background-color: #d4edda;
+}
+
+#play-section {
+    grid-area: play;
+    background-color: #fff3cd;
+}
+
+#fight-section {
+    grid-area: fight;
+    background-color: #f8d7da;
+}
+
+#sleep-section {
+    grid-area: sleep;
+    background-color: #cce5ff;
+}
+
+.tamagotchi {
+    grid-area: tamagotchi;
+    text-align: center;
+    padding: 5px;
+}
+
+.tamagotchi img {
+    height: 200px;
+}
+
+.bar {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 20px;
+    border-radius: 5px;
+}
+
+#food-bar {
+    width: 50%;
+    background-color: #28a745;
+}
+
+#fun-bar {
+    width: 50%;
+    background-color: #ffc107;
+}
+
+#happiness-bar {
+    width: 50%;
+    background-color: #17a2b8;
+}
+
+#strength-bar {
+    width: 50%;
+    background-color: #dc3545;
+}
+
+#energy-bar {
+    width: 50%;
+    background-color: #007bff;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    flex-wrap: wrap;
+}
