@@ -105,6 +105,37 @@ button {
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 15px; 
+    gap: 15px;
     flex-wrap: wrap;
+}
+
+#game-over {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+#game-over h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#game-over button {
+    font-size: 30px;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

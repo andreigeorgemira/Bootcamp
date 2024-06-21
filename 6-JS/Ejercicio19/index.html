@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tamagotchi Game</title>
-        <link rel="stylesheet" href="./styles.css" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="section" id="eat-section">
-                <h2>EAT</h2>
-                <div class="button-container">
-                    <button onclick="eat()">🍏</button>
-                    <button onclick="eat()">🍕</button>
-                    <button onclick="eat()">🍔</button>
-                    <button onclick="eat()">🍣</button>
-                    <button onclick="eat()">🍝</button>
-                    <button onclick="eat()">🥐</button>
-                </div>
-                <div class="bar">
-                    <div id="food-bar" class="progress-bar"></div>
-                </div>
-                <span id="food-percentage">50% Full</span>
-            </div>
-            <div class="section" id="play-section">
-                <h2>PLAY</h2>
-                <div class="button-container">
-                    <button onclick="play()">🎮</button>
-                    <button onclick="play()">⛹️‍♂️</button>
-                    <button onclick="play()">⛳</button>
-                    <button onclick="play()">📺</button>
-                    <button onclick="play()">🚵‍♂️</button>
-                    <button onclick="play()">👨‍💻</button>
-                </div>
-                <div class="bar">
-                    <div id="fun-bar" class="progress-bar"></div>
-                </div>
-                <span id="fun-percentage">50% Fun</span>
-            </div>
-            <div class="tamagotchi">
-                <img src="./images/tamagochi.avif" alt="Tamagotchi" />
-                <h3 id="tamagotchi-name">Fluffy</h3>
-                <div class="bar">
-                    <div id="happiness-bar" class="progress-bar"></div>
-                </div>
-                <span id="happiness-percentage">50% Happiness</span>
-            </div>
-            <div class="section" id="fight-section">
-                <h2>FIGHT</h2>
-                <div class="button-container">
-                    <button onclick="fight()">🥊</button>
-                    <button onclick="fight()">🏋️</button>
-                    <button onclick="fight()">🏃‍♂️</button>
-                </div>
-                <div class="bar">
-                    <div id="strength-bar" class="progress-bar"></div>
-                </div>
-                <span id="strength-percentage">50% Strength</span>
-            </div>
-            <div class="section" id="sleep-section">
-                <h2>SLEEP</h2>
-                <div class="button-container">
-                    <button onclick="sleep()">🛌</button>
-                </div>
-                <div class="bar">
-                    <div id="energy-bar" class="progress-bar"></div>
-                </div>
-                <span id="energy-percentage">50% Energy</span>
-            </div>
-        </div>
-        <script src="./script.js"></script>
-    </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tamagotchi Game</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="container" id="container">
+			<div class="section" id="eat-section">
+				<h2>EAT</h2>
+				<div class="button-container">
+					<button onclick="eat()">🍏</button>
+					<button onclick="eat()">🍕</button>
+					<button onclick="eat()">🍔</button>
+					<button onclick="eat()">🍣</button>
+					<button onclick="eat()">🍝</button>
+					<button onclick="eat()">🥐</button>
+				</div>
+				<div class="bar">
+					<div id="food-bar" class="progress-bar"></div>
+				</div>
+				<span id="food-percentage">50% Full</span>
+			</div>
+			<div class="section" id="play-section">
+				<h2>PLAY</h2>
+				<div class="button-container">
+					<button onclick="play()">🎮</button>
+					<button onclick="play()">⛹️‍♂️</button>
+					<button onclick="play()">⛳</button>
+					<button onclick="play()">📺</button>
+					<button onclick="play()">🚵‍♂️</button>
+					<button onclick="play()">👨‍💻</button>
+				</div>
+				<div class="bar">
+					<div id="fun-bar" class="progress-bar"></div>
+				</div>
+				<span id="fun-percentage">50% Fun</span>
+			</div>
+			<div class="tamagotchi">
+				<img src="./images/tamagochi.avif" alt="Tamagotchi" />
+				<h3 id="tamagotchi-name">Fluffy</h3>
+				<div class="bar">
+					<div id="happiness-bar" class="progress-bar"></div>
+				</div>
+				<span id="happiness-percentage">50% Happiness</span>
+			</div>
+			<div class="section" id="fight-section">
+				<h2>FIGHT</h2>
+				<div class="button-container">
+					<button onclick="fight()">🥊</button>
+					<button onclick="fight()">🏋️</button>
+					<button onclick="fight()">🏃‍♂️</button>
+				</div>
+				<div class="bar">
+					<div id="strength-bar" class="progress-bar"></div>
+				</div>
+				<span id="strength-percentage">50% Strength</span>
+			</div>
+			<div class="section" id="sleep-section">
+				<h2>SLEEP</h2>
+				<div class="button-container">
+					<button onclick="sleep()">🛌</button>
+				</div>
+				<div class="bar">
+					<div id="energy-bar" class="progress-bar"></div>
+				</div>
+				<span id="energy-percentage">50% Energy</span>
+			</div>
+		</div>
+		<div id="game-over" style="display: none">
+			<h1>GAME OVER</h1>
+			<button onclick="restarGame()">Volver a Jugar</button>
+		</div>
+		<script src="./script.js"></script>
+	</body>
 </html>
