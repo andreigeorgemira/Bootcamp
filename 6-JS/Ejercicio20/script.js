@@ -32,3 +32,16 @@ function calculateResult() {
     }
     display.innerText = currentInput;
 }
+
+document.addEventListener('keydown', (event) => {
+    const validKeys = '0123456789+-*/.';
+    if (validKeys.includes(event.key)) {
+        appendCharacter(event.key);
+    } else if (event.key === 'Backspace') {
+        deleteLast();
+    } else if (event.key === 'Enter') {
+        calculateResult();
+    } else if (event.key === 'Escape') {
+        clearDisplay();
+    }
+});
