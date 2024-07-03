@@ -1,0 +1,32 @@
+.azul {
+	background-color: blue;
+}
+
+.verde {
+	background-color: green;
+}
+
+.azul-oscuro {
+	background-color: darkblue;
+}
+
+.lila-oscuro {
+	background-color: darkmagenta;
+}
+
+.lila {
+	background-color: magenta;
+}
+
+.rosa {
+	background-color: pink;
+}
+
+.rojo {
+	background-color: red;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";

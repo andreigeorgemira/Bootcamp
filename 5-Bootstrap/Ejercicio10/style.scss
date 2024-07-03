@@ -1,0 +1,46 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+.row.mt-3 {
+	background-color: lightgray;
+	height: 200px;
+}
+
+.row.mt-3 * {
+	background-color: bisque;
+	text-align: center;
+	outline: 1px solid black;
+	height: 50px;
+}
+
+.justify-content-start * {
+	background-color: orange;
+	outline: 5px solid black;
+}
+
+.justify-content-center * {
+	background-color: cyan;
+	outline: 5px solid red;
+}
+
+.justify-content-end * {
+	background-color: red;
+	outline: 5px solid black;
+}
+
+.justify-content-between * {
+	background-color: blue;
+	outline: 5px solid orange;
+}
+
+.justify-content-around * {
+	background-color: gray;
+	outline: 5px solid black;
+}
+
+.justify-content-evenly * {
+	background-color: red;
+	outline: 5px solid black;
+}
