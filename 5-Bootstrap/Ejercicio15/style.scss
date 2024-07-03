@@ -1,0 +1,39 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+header h1 {
+	font-weight: bolder;
+	color: #38b2ac;
+}
+
+.card img {
+	object-fit: cover;
+	height: 200px;
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+.rating span {
+	font-size: 1.2rem;
+	color: #ffd700;
+	margin-right: 4px;
+}
+.room-type {
+	font-size: 0.9rem;
+	color: #6c757d;
+	margin-bottom: 8px;
+}
+.beds {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+.beds span {
+	font-size: 1rem;
+	margin-left: 4px;
+}
