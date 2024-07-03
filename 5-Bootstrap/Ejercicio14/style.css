@@ -11964,4 +11964,111 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+:root {
+  --bs-body-font-family: "Barlow Semi Condensed", sans-serif;
+  --bs-body-font-size: 0.8125rem; /* 13px */
+  --bs-body-bg: var(--light-grayish-blue);
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  /* display: grid;
+     place-content: center;
+     height: 100vh; */
+  height: 100vh;
+}
+
+.card {
+  /* max-width: 325px; */
+  --bs-card-color: var(--white);
+  --bs-card-border-width: 0;
+  --bs-card-border-radius: 0.625rem;
+}
+
+.card-header {
+  --bs-card-cap-padding-y: 1.5rem;
+  --bs-card-cap-padding-x: 2rem;
+  padding-bottom: 0 !important;
+}
+
+.end-0 {
+  right: 2rem !important;
+}
+
+h1, .h1 {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.card-body {
+  --bs-card-spacer-y: 2rem;
+  padding-top: 0 !important;
+  --bs-card-spacer-x: 2.05rem;
+  --bs-card-color: var(--light-gray);
+}
+
+.flex-column {
+  color: var(--light-gray);
+}
+
+.card1 {
+  --bs-card-bg: var(--moderate-violet);
+  grid-area: one;
+}
+
+.card2 {
+  --bs-card-bg: var(--very-dark-grayish-blue);
+  grid-area: two;
+}
+
+.card3 {
+  --bs-card-bg: var(--white);
+  grid-area: three;
+}
+
+.card4 {
+  --bs-card-bg: var(--very-dark-blackish-blue);
+  grid-area: four;
+}
+
+.card5 {
+  --bs-card-bg: var(--white);
+  color: var(--very-dark-grayish-blue) !important;
+  grid-area: five;
+}
+
+.light-gray {
+  color: var(--light-gray) !important;
+}
+
+.dark-blue {
+  color: var(--very-dark-grayish-blue) !important;
+}
+
+/* new custom  */
+main {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.grid-container {
+  grid-auto-columns: 1fr;
+  grid-template-areas: "one" "two" "three" "four" "five";
+  width: min(90%, 1200px);
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-areas: "one one two five" "three four four five";
+    max-height: 600px;
+  }
+  main {
+    margin: 0 !important;
+  }
 }/*# sourceMappingURL=style.css.map */
